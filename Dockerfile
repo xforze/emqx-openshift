@@ -7,6 +7,7 @@ RUN yum install -y curl
 
 ADD emqx.lic /etc/emqx/
 ADD emqx.conf /etc/emqx/emqx.conf
+RUN chmod a+w /etc/emqx/emqx.conf
 ADD start.sh /
 
 USER emqx
