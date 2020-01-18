@@ -7,4 +7,6 @@ ADD emqx.lic /etc/emqx/
 ADD emqx.conf /etc/emqx/emqx.conf
 ADD start.sh /
 
+USER emqx
+
 CMD ["/start.sh"]
