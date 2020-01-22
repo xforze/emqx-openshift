@@ -146,32 +146,32 @@ cluster.autoclean = 5m
 ## Kubernates API server list, seperated by ','.
 ##
 ## Value: String
-## cluster.k8s.apiserver = https://172.30.0.1:443
+cluster.k8s.apiserver = https://172.30.0.1:443
 
 ## The service name helps lookup EMQ nodes in the cluster.
 ##
 ## Value: String
-## cluster.k8s.service_name = emqx-openshift
+cluster.k8s.service_name = emqx-openshift
 
 ## The address type is used to extract host from k8s service.
 ##
 ## Value: ip | dns | hostname
-## cluster.k8s.address_type = ip
+cluster.k8s.address_type = ip
 
 ## The app name helps build 'node.name'.
 ##
 ## Value: String
-## cluster.k8s.app_name = emqx
+cluster.k8s.app_name = emqx
 
 ## The suffix added to dns and hostname get from k8s service
 ##
 ## Value: String
-## cluster.k8s.suffix = pod.cluster.local
+cluster.k8s.suffix = pod.cluster.local
 
 ## Kubernates Namespace
 ##
 ## Value: String
-## cluster.k8s.namespace = emqx-openshift
+cluster.k8s.namespace = emqx-openshift
 
 ##--------------------------------------------------------------------
 ## Node
