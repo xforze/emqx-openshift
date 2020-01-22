@@ -1,1 +1,0 @@
-# emqx-openshift
