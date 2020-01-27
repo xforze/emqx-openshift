@@ -266,7 +266,7 @@ node.global_gc_interval = 15m
 ## Value: Number [0-65535]
 ##
 ## vm.args: -env ERL_FULLSWEEP_AFTER Number
-node.fullsweep_after = 10000
+node.fullsweep_after = 1000
 
 ## Crash dump log file.
 ##
@@ -606,7 +606,7 @@ zone.external.acl_deny_action = ignore
 ## messages | bytes passed through.
 ##
 ## Numbers delimited by `|'. Zero or negative is to disable.
-zone.external.force_gc_policy = 10000|1MB
+zone.external.force_gc_policy = 1000|1MB
 
 ## Max message queue length and total heap size to force shutdown
 ## connection/session process.
@@ -815,12 +815,12 @@ zone.internal.max_inflight = 128
 ## See zone.$name.max_awaiting_rel
 ##
 ## Value: Number
-zone.internal.max_awaiting_rel = 10000
+zone.internal.max_awaiting_rel = 1000
 
 ## See zone.$name.max_mqueue_len
 ##
 ## Value: Number >= 0
-zone.internal.max_mqueue_len = 100000
+zone.internal.max_mqueue_len = 10000
 
 ## Whether to enqueue Qos0 messages.
 ##
@@ -833,7 +833,7 @@ zone.internal.mqueue_store_qos0 = true
 zone.internal.enable_flapping_detect = off
 
 ## See zone.$name.force_shutdown_policy
-zone.internal.force_shutdown_policy = 1000000|64MB
+zone.internal.force_shutdown_policy = 100000|64MB
 
 ## All the topics will be prefixed with the mountpoint path if this option is enabled.
 ##
@@ -882,7 +882,7 @@ listener.tcp.external.max_connections = 1024000
 ## Maximum external connections per second.
 ##
 ## Value: Number
-listener.tcp.external.max_conn_rate = 10000
+listener.tcp.external.max_conn_rate = 1000
 
 ## Specify the {active, N} option for the external MQTT/TCP Socket.
 ##
@@ -1013,12 +1013,12 @@ listener.tcp.internal.max_connections = 1024000
 ## Maximum internal connections per second.
 ##
 ## Value: Number
-listener.tcp.internal.max_conn_rate = 10000
+listener.tcp.internal.max_conn_rate = 1000
 
 ## Specify the {active, N} option for the internal MQTT/TCP Socket.
 ##
 ## Value: Number
-listener.tcp.internal.active_n = 10000
+listener.tcp.internal.active_n = 1000
 
 ## Zone of the internal MQTT/TCP listener belonged to.
 ##
@@ -1369,7 +1369,7 @@ listener.ws.external.max_connections = 102400
 ## Maximum MQTT/WebSocket connections per second.
 ##
 ## Value: Number
-listener.ws.external.max_conn_rate = 10000
+listener.ws.external.max_conn_rate = 1000
 
 ## Simulate the {active, N} option for the MQTT/WebSocket connections.
 ##
@@ -1582,7 +1582,7 @@ listener.wss.external.max_connections = 16
 ## See: listener.tcp.$name.max_conn_rate
 ##
 ## Value: Number
-listener.wss.external.max_conn_rate = 10000
+listener.wss.external.max_conn_rate = 1000
 
 ## Simulate the {active, N} option for the MQTT/WebSocket/SSL connections.
 ##
