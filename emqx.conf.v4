@@ -50,7 +50,7 @@ cluster.autoheal = on
 ## -s: second, e.g. '30s' for 30 seconds
 ##
 ## Default: 5m
-cluster.autoclean = 5m
+cluster.autoclean = 1m
 
 ##--------------------------------------------------------------------
 ## Cluster using static node list
@@ -713,7 +713,7 @@ zone.external.session_expiry_interval = 2h
 ## or inflight window is full. 0 means no limit.
 ##
 ## Value: Number >= 0
-zone.external.max_mqueue_len = 1000
+zone.external.max_mqueue_len = 0
 
 ## Topic priorities.
 ## 'none' to indicate no priority table (by default), hence all messages
