@@ -14,6 +14,7 @@ ADD acl.conf /etc/emqx/
 ADD emqx_auth_username.conf /etc/emqx/plugins/
 ADD emqx_backend_redis.conf.v4 /etc/emqx/plugins/emqx_backend_redis.conf
 ADD emqx_backend_mysql.conf.v4 /etc/emqx/plugins/emqx_backend_mysql.conf
+ADD emqx_backend_mongo.conf /etc/emqx/plugins/emqx_backend_mongo.conf
 ADD emqx_statsd.conf /etc/emqx/plugins/
 
 RUN chown emqx -R /etc/emqx
