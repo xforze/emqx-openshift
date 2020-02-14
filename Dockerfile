@@ -17,6 +17,8 @@ ADD emqx_backend_mysql.conf.v4 /etc/emqx/plugins/emqx_backend_mysql.conf
 ADD emqx_backend_mongo.conf /etc/emqx/plugins/emqx_backend_mongo.conf
 ADD emqx_statsd.conf /etc/emqx/plugins/
 
+ADD pushgateway /
+
 RUN chown emqx -R /etc/emqx
 
 ADD start.sh /
